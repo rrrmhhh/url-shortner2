@@ -1,0 +1,26 @@
+html
+    head
+        title= title
+    body
+        h1= "URL Shortener Microservice"
+        div
+            h3= "Example creation usage"
+            p if the url looks good and does exist
+            div
+                code.
+                    https://this.website.herokuapp.com/new/https://www.google.com
+            div 
+                code.
+                    https://this.website.herokuapp.com/new/http://foo.com:80
+        div 
+            h3= "Example of ouput"
+            div
+                h4= "OK"
+                code= '{"original_url":"http://www.thetest.com", "short_url":"https://thiswebsite.herokuapp.com/8170"}'
+                h4= "not OK"
+                code= '{"original_url":"htp://www.fake.notreal", "short_url": null}'
+        div 
+            h3= "Usage"
+            p once created if you click on the shortened url you'll be redirected to full url
+            
+    
